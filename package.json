@@ -1,5 +1,18 @@
 {
   "dependencies": {
-    "y": "^0.3.2"
-  }
+    "mongoose": "^7.2.0"
+  },
+  "name": "learnmongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "devStart": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
