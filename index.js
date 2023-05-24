@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 const User = require('./User');
 
-mongoose.connect('mongodb://localhost:27017/appdb', {
+mongoose.connect('mongodb://127.0.0.1:27017/appdb', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+  useUnifiedTopology: true})
+  .then(console.log('connection to db is successfull'));
 
-console.log('connected');
-
-const user = new User({ name: 'Slav', age: 28 });
-user.save().then(() => console.log('user saved'));
+const user = new User({ name: 'Slav1', age: 29 });
+user.save()
+  .then(() => console.log('user saved'))
+  .catch((error) => console.error(error))
+  .finally(() => mongoose.disconnect());

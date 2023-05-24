@@ -1,18 +1,14 @@
 {
-  "dependencies": {
-    "mongoose": "^7.2.0"
-  },
   "name": "learnmongoose",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
   "scripts": {
-    "devStart": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "mongoose": "^7.2.0"
+  }
 }
